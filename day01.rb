@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 
-inputs = File.readlines("inputs/01.txt")
+inputs = File.readlines('inputs/01.txt')
 
 result1 = inputs.map do |input|
   numbers = input.scan(/\d/)
@@ -8,6 +8,8 @@ result1 = inputs.map do |input|
 end.sum
 
 puts "Day01::Part1: #{result1}"
+
+# ====================================================
 
 REPLACEMENT_HASH = {
   'one' => 1, 'two' => 2, 'three' => 3, 'four' => 4, 'five' => 5,
